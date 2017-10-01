@@ -3,7 +3,7 @@ from lxml import html
 import requests
 from bs4 import BeautifulSoup
 
-page = requests.get('https://parahumans.wordpress.com/table-of-contents/')
+page = requests.get('')
 webpage = html.fromstring(page.content)
 links = webpage.xpath('//a/@href')
 links = links[11:317]
